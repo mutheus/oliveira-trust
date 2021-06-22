@@ -1,23 +1,39 @@
 import logo from './logo.svg';
+import hamburger from './images/hamburger.svg'
+import notifs from './images/notifs.svg'
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="app">
+      <header className="app__header">
+        <nav className="nav">
+          <button className="nav__btn">
+            <img src={hamburger} alt="Hamburger icon" />
+          </button>
+          
+          <div className="nav__wrapper">
+            <a href="/">
+              <img src={logo} className="nav__logo" alt="Oliveira Trust logo" />
+            </a>
+          
+            <div>
+              <button className="nav__notifs">
+                <img src={notifs} alt="Notifications icon" />
+              </button>
+              
+              <button>
+                <img className="nav__avatar" src="https://github.com/mutheus.png" alt="Profile avatar" />
+              </button>
+            </div>
+          </div>
+        </nav>
       </header>
+      <main className="container">
+        <div className="container__hero">
+          <h1>Welcome back,<br /> mutheus</h1>
+        </div>
+      </main>
     </div>
   );
 }
