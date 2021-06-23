@@ -1,0 +1,57 @@
+.app__header {
+  border-bottom: 2px solid var(--light-gray-line);
+}
+
+.nav {
+  display: flex;
+}
+
+.nav button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+.nav > button {
+  padding: 1.5em;
+  border-right: 2px solid var(--light-gray-line);
+}
+
+.nav > button img {
+  width: 30px;
+  height: 30px;
+}
+
+.nav__wrapper {
+  display: flex;
+  margin: 0 1.5em;
+  padding: 1.5em 0;
+  align-items: center;
+  width: 100%;
+}
+
+.nav__wrapper > a {
+  margin-right: auto;
+}
+
+.nav__wrapper > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-left: auto;
+}
+
+.nav__wrapper > div button:first-child img {
+  width: 21px;
+  height: 21px;
+}
+
+.nav__logo,
+.nav__avatar {
+  width: 35px;
+  height: 35px;
+}
+
+.nav__avatar {
+  border-radius: 50%;
+}

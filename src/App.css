@@ -1,56 +1,7 @@
-.app__header {
-  border-bottom: 1px solid #ededed;
-}
-
-.nav {
-  display: flex;
-}
-
-.nav button {
-  background-color: transparent;
-  border: none;
-  padding: 0;
-}
-
-.nav > button {
-  padding: 1.5em;
-  border-right: 1px solid #ededed;
-}
-
-.nav__wrapper {
-  display: flex;
-  margin: 0 1.5em;
-  align-items: center;
-  width: 100%;
-}
-
-.nav__wrapper a {
-  margin-right: auto;
-}
-
-.nav__wrapper div {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4px;
-  margin-left: auto;
-}
-
-.nav > button img,
-.nav__logo,
-.nav__avatar {
-  width: 36px;
-  height: 36px;
-}
-
-.nav__avatar {
-  border-radius: 50%;
-  background-color: transparent;
-}
-
-.container__hero {
+.hero {
   padding: 3em 1em;
 }
 
-.container__hero h1 {
+.hero h1 {
   font-size: 1.625rem;
 }

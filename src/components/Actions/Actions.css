@@ -1,0 +1,36 @@
+.employees {
+  padding: 0 1em;
+}
+
+.employees h2 {
+  font-size: 1.4rem;
+  margin-bottom: 1.5em;
+}
+
+.employees > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.employees > div button {
+  padding: 0 1em;
+  height: 46px;
+  font-size: 1rem;
+  border-radius: 8px;
+  background-color: transparent;
+  border: 3px solid var(--gray-border);
+  display: flex;
+  align-items: center;
+}
+
+.employees > div button:first-child img {
+  width: 16px;
+  height: 16px;
+  margin-left: 8px;
+}
+
+.employees > div button:last-child img {
+  width: 15px;
+  height: 15px;
+  margin-right: 8px;
+}

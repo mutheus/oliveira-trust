@@ -1,6 +1,13 @@
 /**:not(path):not(g) {    color:                    hsla(210, 100%, 100%, 0.9) !important;    background:               hsla(210, 100%,  50%, 0.5) !important;    outline:    solid 0.25rem hsla(210, 100%, 100%, 0.5) !important;
     box-shadow: none !important;}*/
 
+:root {
+  --light-gray-bg: rgba(240, 240, 240, .5);
+  --light-gray-line: #ededed;
+  --gray-border: #bbbbbb;
+  --black-text: #2a2a2a;
+}
+
 html {
   font-size: 100%;
   box-sizing: border-box;
@@ -15,5 +22,6 @@ body {
   font-weight: 400;
   font-style: normal;
   margin: 0;
-  color: #333;
+  background-color: var(--light-gray-bg);
+  color: var(--black-text);
 }
