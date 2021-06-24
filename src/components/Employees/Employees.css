@@ -1,43 +1,31 @@
 .employees-table {
-  display: flex;
-  justify-content: center;
-}
-
-table {
-  width: 100%;
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr 1fr;
   font-size: 13px;
   padding: 0 1em;
   margin: 2em 0;
 }
 
-table tr th {
-  text-align: start;
-}
-
-table h3 {
-  font-size: .87rem;
-  margin: 0;
-}
-
-thead th {
-  padding: 1em .5em;
+.employees-table > div {
+  display: flex;
+  align-items: center;
   border-top: 2px solid #ededed;
-  border-bottom: 2px solid #ededed;
+  padding: 1em;
 }
 
-thead th:not(:first-child) {
-  padding-left: 1em;
+.employees-table > div:nth-child(2),
+.employees-table > div:nth-child(3) {
   border-left: 2px solid #ededed;
 }
 
-tbody tr td {
-  border-bottom: 2px solid #ededed;
-  padding: 1em 0;
+.employee__info {
+  white-space: nowrap;
+  overflow: auto;
 }
 
-tbody tr td:last-child img {
-  width: 20px;
-  height: 20px;
+.employee__info h3 {
+  font-size: .87rem;
+  margin: 0;
 }
 
 .employee__info {
@@ -52,8 +40,9 @@ tbody tr td:last-child img {
   margin-right: 8px;
 }
 
-.employee__role {
+.employee__role span {
   font-size: .7rem;
+  width: max-content;
   color: #fff;
   border-radius: 100px;
   white-space: nowrap;
@@ -61,10 +50,15 @@ tbody tr td:last-child img {
   background-color: #101111;
 }
 
-.employee__time-in-job {
+.employee__time-in-job span {
   padding: 6px 8px;
+  width: max-content;
   border-radius: 100px;
   border: 2px solid var(--gray-border);
   font-size: .7rem;
-  margin-left: 1em;
+}
+
+.employee__delete img {
+  width: 20px;
+  height: 20px;
 }

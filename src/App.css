@@ -5,3 +5,54 @@
 .hero h1 {
   font-size: 1.625rem;
 }
+
+.menu {
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.3s ease-in-out;
+  background-color: transparent;
+  width: 100vw;
+}
+
+.menu > div {
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+  height: 100vh;
+  width: 80vw;
+  background-color: #fff;
+}
+
+.menu div button {
+  background-color: transparent;
+  border: none;
+  padding: 2em;
+  width: max-content;
+  margin-left: auto;
+}
+
+.menu div button img {
+  width: 30px;
+  height: 30px;
+}
+
+.menu div > a {
+  padding: 1em 2em;
+  font-size: 1rem;
+}
+
+.submenu {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2em;
+}
+
+.closeMenu {
+  transform: translateX(-100%);
+}
+
+.openMenu {
+  transform: translateX(0);
+}
