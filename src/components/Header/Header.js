@@ -1,22 +1,13 @@
-import { useContext, useEffect } from 'react';
+import { useContext } from 'react';
+import { DashboardContext } from '../../contexts/DashboardContext';
+
 import logo from '../../logo.svg';
 import hamburger from '../../images/hamburger.svg';
 import notification from '../../images/notification.svg';
-import close from '../../images/close.svg';
-import { DashboardContext } from '../../contexts/DashboardContext';
-
 import './Header.css';
 
 function Header() {
-  const { openMenu, isOpen } = useContext(DashboardContext);
-  
-  useEffect(() => {
-    if (isOpen) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = 'visible';
-    }
-  })
+  const { openMenu } = useContext(DashboardContext);
   
   return (
     <>
@@ -43,22 +34,6 @@ function Header() {
           </div>
         </div>
       </header>
-      
-      <nav className={`menu ${isOpen ? 'openMenu' : 'closeMenu'}`}>
-        <div>
-          <button onClick={openMenu}>
-            <img src={close} alt="Hamburger icon" />
-          </button>
-          <a>Home</a>
-          <a>Profile</a>
-          <div className="submenu">
-            <a>Real State</a>
-            <a>Stock market</a>
-          </div>
-          <a>Products</a>
-          <a>Settings</a>
-        </div>
-      </nav>
     </>
   );
 }

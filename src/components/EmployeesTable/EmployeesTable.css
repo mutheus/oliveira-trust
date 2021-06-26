@@ -1,0 +1,19 @@
+.employees-table {
+  display: grid;
+  grid-template-columns: 4fr 3fr 2fr min-content;
+  font-size: 13px;
+  padding: 0 1em;
+  margin: 2em 0;
+}
+
+.employees-table > div {
+  display: flex;
+  align-items: center;
+  border-top: 2px solid #ededed;
+  padding: 1em;
+}
+
+.employees-table > div:nth-child(2),
+.employees-table > div:nth-child(3) {
+  border-left: 2px solid #ededed;
+}

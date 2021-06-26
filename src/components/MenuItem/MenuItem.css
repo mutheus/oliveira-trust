@@ -1,0 +1,20 @@
+.nav-item {
+  display: flex;
+  align-items: center;
+  padding: 1em;
+  margin: 0 1em;
+}
+
+.nav-item img {
+  width: 25px;
+  height: 25px;
+}
+
+.nav-item a {
+  margin-left: 10px;
+}
+
+.subnav {
+  margin: 0 1em 0 4em;
+  padding: .4em;
+}

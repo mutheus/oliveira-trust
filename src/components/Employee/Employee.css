@@ -1,23 +1,3 @@
-.employees-table {
-  display: grid;
-  grid-template-columns: 3fr 1fr 1fr 1fr;
-  font-size: 13px;
-  padding: 0 1em;
-  margin: 2em 0;
-}
-
-.employees-table > div {
-  display: flex;
-  align-items: center;
-  border-top: 2px solid #ededed;
-  padding: 1em;
-}
-
-.employees-table > div:nth-child(2),
-.employees-table > div:nth-child(3) {
-  border-left: 2px solid #ededed;
-}
-
 .employee__info {
   white-space: nowrap;
   overflow: auto;
@@ -36,8 +16,13 @@
 .employee__info img {
   width: 40px;
   height: 40px;
+  object-fit: cover;
   border-radius: 50%;
   margin-right: 8px;
+}
+
+.employee__role {
+  overflow: auto;
 }
 
 .employee__role span {
@@ -48,6 +33,10 @@
   white-space: nowrap;
   padding: 6px 8px;
   background-color: #101111;
+}
+
+.employee__time-in-job {
+  overflow: auto;
 }
 
 .employee__time-in-job span {

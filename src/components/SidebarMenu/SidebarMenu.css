@@ -1,0 +1,40 @@
+.menu {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: transform 0.3s ease-in-out;
+  background-color: transparent;
+  width: 100vw;
+  z-index: 1;
+}
+
+.menu > div {
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+  height: 100vh;
+  width: 70vw;
+  background-color: rgba(240, 240, 240, 1);
+}
+
+.menu div button {
+  background-color: transparent;
+  border: none;
+  padding: 2em;
+  width: max-content;
+  margin-right: auto;
+}
+
+.menu div button img {
+  width: 30px;
+  height: 30px;
+}
+
+.closeMenu {
+  transform: translateX(-100%);
+}
+
+.openMenu {
+  transform: translateX(0);
+}
